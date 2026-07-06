@@ -12,4 +12,11 @@ resource "helm_release" "this" {
     local.values_yaml,
     var.extra_values,
   ])
+
+  lifecycle {
+    precondition {
+      condition     = var.max_runners >= var.min_runners
+      error_message = "max_runners must be >= min_runners."
+    }
+  }
 }
