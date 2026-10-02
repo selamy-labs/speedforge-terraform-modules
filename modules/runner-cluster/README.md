@@ -18,7 +18,7 @@ cluster implementation module, not the ARC/ArgoCD layer.
 
 ```hcl
 module "runner_cluster" {
-  source = "git::https://github.com/speedforge/terraform-modules.git//modules/runner-cluster?ref=vX.Y.Z"
+  source = "git::https://github.com/selamy-labs/speedforge-terraform-modules.git//modules/runner-cluster?ref=vX.Y.Z"
 
   name        = "speedforge-runners"
   provider_id = "oci-oke"

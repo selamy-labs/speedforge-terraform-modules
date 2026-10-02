@@ -10,7 +10,7 @@ This module deploys ONLY a runner scale set. The ARC controller (`gha-runner-sca
 
 ```hcl
 module "agents_runners" {
-  source = "git::https://github.com/speedforge/terraform-modules.git//modules/arc-runner-scale-set?ref=v0.1.0"
+  source = "git::https://github.com/selamy-labs/speedforge-terraform-modules.git//modules/arc-runner-scale-set?ref=v0.1.0"
 
   name          = "agents-gke"
   namespace     = "github-runners"

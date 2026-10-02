@@ -16,7 +16,7 @@ reference an unpinned `main` and never copy a module into a consumer repo.
 
 ```hcl
 module "runners" {
-  source = "git::https://github.com/speedforge/terraform-modules.git//modules/arc-runner-scale-set?ref=v0.1.0"
+  source = "git::https://github.com/selamy-labs/speedforge-terraform-modules.git//modules/arc-runner-scale-set?ref=v0.1.0"
 
   name          = "agents-gke"
   chart_version = "0.12.1"
